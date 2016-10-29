@@ -60,6 +60,7 @@
            `(:name "wbdict-gb2312-elpa" :file ,file :elpa t))
         (message "Chinese-pyim 没有安装，chinese-pyim-wbdict 启用失败。")))))
 
+;;;###autoload
 (defun chinese-pyim-wbdict-gbk-enable ()
   "Add wbdict-gbk to chinese-pyim."
   (interactive)
