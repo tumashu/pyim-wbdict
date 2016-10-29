@@ -79,9 +79,5 @@
 ;; #+BEGIN_SRC emacs-lisp
 (provide 'chinese-pyim-wbdict)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; chinese-pyim-wbdict.el ends here
 ;; #+END_SRC
