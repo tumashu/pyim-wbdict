@@ -1,4 +1,4 @@
-;;; chinese-pyim-wbdict.el --- A wubi dict of chinese-pyim
+;;; chinese-pyim-wbdict.el --- Some wubi dicts for chinese-pyim
 
 ;; * Header
 ;; Copyright (C) 2016 Feng Shu <tumashu@163.com>
