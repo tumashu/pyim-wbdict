@@ -6,6 +6,7 @@
 ;; Author: Feng Shu <tumashu@163.com>
 ;; URL: https://github.com/tumashu/chinese-pyim-wbdict
 ;; Version: 0.0.1
+;; Package-Requires: ((chinese-pyim "1.0"))
 ;; Keywords: convenience, Chinese, pinyin, input-method, complete
 
 ;;; License:
