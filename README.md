@@ -3,24 +3,26 @@ Note: this file is auto converted from pyim-wbdict.el by [el2org](https://github
 
 # &#30446;&#24405;
 
-1.  [pyim-wbdict README](#orgd7fdbf9)
-    1.  [简介](#orga485ffb)
-    2.  [安装和使用](#orgb537550)
+1.  [pyim-wbdict README](#org1c3fe63)
+    1.  [简介](#org5d91ab6)
+    2.  [安装和使用](#orgaae6d28)
 
 
-<a id="orgd7fdbf9"></a>
+<a id="org1c3fe63"></a>
 
 # pyim-wbdict README
 
 
-<a id="orga485ffb"></a>
+<a id="org5d91ab6"></a>
 
 ## 简介
 
-pyim-wbdict 是 pyim 的一个五笔词库，词库源于 emacs-eim.
+pyim-wbdict 是 pyim 的一个五笔词库包。
+
+1.  pyim-wbdict-v98.pyim 源于 emacs-eim 的五笔词库。
 
 
-<a id="orgb537550"></a>
+<a id="orgaae6d28"></a>
 
 ## 安装和使用
 
