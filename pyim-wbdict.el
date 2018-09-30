@@ -40,38 +40,28 @@
 ;; 3. 在emacs配置文件中（比如: ~/.emacs）添加如下代码：
 ;;    #+BEGIN_EXAMPLE
 ;;    (require 'pyim-wbdict)
-;;    (pyim-wbdict-gb2312-enable) ; gb2312 version
-;;    ;; (pyim-wbdict-gbk-enable) ; gbk version
+;;    (pyim-wbdict-v98-enable)
 ;;    #+END_EXAMPLE
 
 ;;; Code:
 ;; * 代码                                                               :code:
 
 ;;;###autoload
-(defun pyim-wbdict-gb2312-enable ()
-  "Add wbdict-gb2312 to pyim."
+(defun pyim-wbdict-v98-enable ()
+  "Add wubi dict (98 version) to pyim."
   (interactive)
   (let* ((dir (file-name-directory
                (locate-library "pyim-wbdict.el")))
-         (file (concat dir "pyim-wbdict-gb2312.pyim")))
+         (file (concat dir "pyim-wbdict-v98.pyim")))
     (when (file-exists-p file)
       (if (featurep 'pyim)
           (pyim-extra-dicts-add-dict
-           `(:name "wbdict-gb2312-elpa" :file ,file :elpa t))
+           `(:name "wbdict-v98-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
 
 ;;;###autoload
-(defun pyim-wbdict-gbk-enable ()
-  "Add wbdict-gbk to pyim."
-  (interactive)
-  (let* ((dir (file-name-directory
-               (locate-library "pyim-wbdict.el")))
-         (file (concat dir "pyim-wbdict-gbk.pyim")))
-    (when (file-exists-p file)
-      (if (featurep 'pyim)
-          (pyim-extra-dicts-add-dict
-           `(:name "wbdict-gbk-elpa" :file ,file :elpa t))
-        (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
+(define-obsolete-function-alias 'pyim-wbdict-gbk-enable 'pyim-wbdict-v98-enable)
+(define-obsolete-function-alias 'pyim-wbdict-gb2312-enable 'pyim-wbdict-v98-enable)
 
 ;; * Footer
 
