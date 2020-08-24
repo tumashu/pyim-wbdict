@@ -42,8 +42,8 @@
 ;; 3. 在emacs配置文件中（比如: ~/.emacs）添加如下代码：
 ;;    #+BEGIN_EXAMPLE
 ;;    (require 'pyim-wbdict)
-;;    ;; (pyim-wbdict-v86-enable) ;; 86版用户
-;;    ;; (pyim-wbdict-v98-enable) ;; 98版用户
+;;    ;; (pyim-wbdict-v86-enable) ;86版五笔用户使用这个命令
+;;    ;; (pyim-wbdict-v98-enable) ;98版五笔用户使用这个命令
 ;;    #+END_EXAMPLE
 
 ;;; Code:

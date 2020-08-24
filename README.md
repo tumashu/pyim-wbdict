@@ -3,17 +3,17 @@ Note: this file is auto converted from pyim-wbdict.el by [el2org](https://github
 
 # &#30446;&#24405;
 
-1.  [pyim-wbdict README](#org21d4186)
-    1.  [简介](#orgad3a375)
-    2.  [安装和使用](#org95fe790)
+1.  [pyim-wbdict README](#org19f3af0)
+    1.  [简介](#org131465f)
+    2.  [安装和使用](#org88d04be)
 
 
-<a id="org21d4186"></a>
+<a id="org19f3af0"></a>
 
 # pyim-wbdict README
 
 
-<a id="orgad3a375"></a>
+<a id="org131465f"></a>
 
 ## 简介
 
@@ -23,7 +23,7 @@ pyim-wbdict 是 pyim 的一个五笔词库包。
 2.  pyim-wbdict-v98.pyim 源于 98wubi-tables 的五笔词库。
 
 
-<a id="org95fe790"></a>
+<a id="org88d04be"></a>
 
 ## 安装和使用
 
@@ -32,6 +32,6 @@ pyim-wbdict 是 pyim 的一个五笔词库包。
 3.  在emacs配置文件中（比如: ~/.emacs）添加如下代码：
     
         (require 'pyim-wbdict)
-        ;; (pyim-wbdict-v86-enable) ;; 86版用户
-        ;; (pyim-wbdict-v98-enable) ;; 98版用户
+        ;; (pyim-wbdict-v86-enable) ;86版五笔用户使用这个命令
+        ;; (pyim-wbdict-v98-enable) ;98版五笔用户使用这个命令
 
