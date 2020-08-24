@@ -62,6 +62,7 @@
            `(:name "wbdict-v86-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
 
+;;;###autoload
 (defun pyim-wbdict-v98-enable ()
   "Add wubi dict (98 version) to pyim."
   (interactive)
