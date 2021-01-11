@@ -91,8 +91,8 @@
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
 
 ;;;###autoload
-(define-obsolete-function-alias 'pyim-wbdict-gbk-enable 'pyim-wbdict-v98-enable)
-(define-obsolete-function-alias 'pyim-wbdict-gb2312-enable 'pyim-wbdict-v98-enable)
+(define-obsolete-function-alias 'pyim-wbdict-gbk-enable 'pyim-wbdict-v98-enable "0.0.1")
+(define-obsolete-function-alias 'pyim-wbdict-gb2312-enable 'pyim-wbdict-v98-enable "0.0.1")
 
 ;; * Footer
 
