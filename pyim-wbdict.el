@@ -43,6 +43,7 @@
 ;; 3. 在emacs配置文件中（比如: ~/.emacs）添加如下代码：
 ;;    #+BEGIN_EXAMPLE
 ;;    (require 'pyim-wbdict)
+;;    (setq pyim-default-scheme 'wubi)
 ;;    ;; (pyim-wbdict-v86-enable) ;86版五笔用户使用这个命令
 ;;    ;; (pyim-wbdict-v98-enable) ;98版五笔用户使用这个命令
 ;;    ;; (pyim-wbdict-v98-morphe-enable) ;98版五笔（单字）用户使用这个命令，该词库为超大字符集，部分生僻字形可能需要安装支持EXT-B的字体（如HanaMinB等）才能正确显示
@@ -50,6 +51,18 @@
 
 ;;; Code:
 ;; * 代码                                                               :code:
+(require 'pyim)
+
+(pyim-scheme-add
+ '(wubi
+   :document "五笔输入法。"
+   :class xingma
+   :first-chars "abcdefghijklmnopqrstuvwxyz"
+   :rest-chars "abcdefghijklmnopqrstuvwxyz'"
+   :code-prefix "wubi/" ;五笔词库中所有的 code 都以 "wubi/" 开头，防止和其它词库冲突。
+   :code-split-length 4 ;默认将用户输入切成 4 个字符长的 code 列表（不计算 code-prefix）
+   :code-maximum-length 4 ;五笔词库中，code 的最大长度（不计算 code-prefix）
+   :prefer-triggers nil))
 
 ;;;###autoload
 (defun pyim-wbdict-v86-enable ()
