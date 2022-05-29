@@ -53,7 +53,8 @@
 
 ;;; Code:
 ;; * 代码                                                               :code:
-(require 'pyim)
+(require 'pyim-dict)
+(require 'pyim-scheme)
 
 (pyim-scheme-add
  '(wubi
@@ -75,7 +76,7 @@
                (locate-library "pyim-wbdict.el")))
          (file (concat dir "pyim-wbdict-v86.pyim")))
     (when (file-exists-p file)
-      (if (featurep 'pyim)
+      (if (featurep 'pyim-dict)
           (pyim-extra-dicts-add-dict
            `(:name "wbdict-v86-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
@@ -88,7 +89,7 @@
                (locate-library "pyim-wbdict.el")))
          (file (concat dir "pyim-wbdict-v86-single.pyim")))
     (when (file-exists-p file)
-      (if (featurep 'pyim)
+      (if (featurep 'pyim-dict)
           (pyim-extra-dicts-add-dict
            `(:name "wbdict-v86-single-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
@@ -101,7 +102,7 @@
                (locate-library "pyim-wbdict.el")))
          (file (concat dir "pyim-wbdict-v98.pyim")))
     (when (file-exists-p file)
-      (if (featurep 'pyim)
+      (if (featurep 'pyim-dict)
           (pyim-extra-dicts-add-dict
            `(:name "wbdict-v98-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
@@ -114,7 +115,7 @@
                (locate-library "pyim-wbdict.el")))
          (file (concat dir "pyim-wbdict-v98-morphe.pyim")))
     (when (file-exists-p file)
-      (if (featurep 'pyim)
+      (if (featurep 'pyim-dict)
           (pyim-extra-dicts-add-dict
            `(:name "wbdict-v98-morphe-elpa" :file ,file :elpa t))
         (message "pyim 没有安装，pyim-wbdict 启用失败。")))))
