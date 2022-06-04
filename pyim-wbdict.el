@@ -56,18 +56,6 @@
 (require 'pyim-dict)
 (require 'pyim-scheme)
 
-(pyim-scheme-add
- '(wubi
-   :document "五笔输入法。"
-   :class xingma
-   :first-chars "abcdefghijklmnopqrstuvwxyz"
-   :rest-chars "abcdefghijklmnopqrstuvwxyz'"
-   :code-prefix "wubi/" ;五笔词库中所有的 code 都以 "wubi/" 开头，防止和其它词库冲突。
-   :code-prefix-history (".") ;五笔词库以前使用 "." 做为 code-prefix.
-   :code-split-length 4 ;默认将用户输入切成 4 个字符长的 code 列表（不计算 code-prefix）
-   :code-maximum-length 4 ;五笔词库中，code 的最大长度（不计算 code-prefix）
-   :prefer-triggers nil))
-
 ;;;###autoload
 (defun pyim-wbdict-v86-enable ()
   "Add wubi dict (86 version) to pyim."
